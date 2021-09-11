@@ -20,8 +20,8 @@ class Utils {
         issuer: "http://localhost:8888",
         subject: user.id.toString(),
         otherClaims: <String, dynamic>{
-          // 'name': user.name,
-          // 'email': user.email,
+          'name': user.name,
+          'email': user.email,
         },
         maxAge: Duration(days: 1));
 

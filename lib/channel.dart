@@ -15,7 +15,7 @@ class TodoChannel extends ApplicationChannel {
 
     final dataModel = ManagedDataModel.fromCurrentMirrorSystem();
     final persistentStore = PostgreSQLPersistentStore.fromConnectionInfo(
-        "postgres", "postgres", "localhost", 5432, "todo_aqueduct");
+        "postgres", "postgres", "localhost", 5432, "postgres");
 
     context = ManagedContext(dataModel, persistentStore);
   }
